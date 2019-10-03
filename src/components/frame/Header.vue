@@ -6,8 +6,8 @@
   <b-collapse id="nav-collapse" is-nav v-if="auth.user === null">
       <b-navbar-nav class="ml-auto">
           <b-navbar-nav>
-            <b-nav-item @click="redirect('/Login')" id="login">Login</b-nav-item>
-            <b-nav-item @click="redirect('/Register')"  id="signup">Sign Up</b-nav-item>
+            <b-nav-item @click="redirect('/Login')" v-if="auth.user ===null" id="login">Login</b-nav-item>
+            <b-nav-item @click="redirect('/Register')"  v-if="auth.user ===null"  id="signup">Sign Up</b-nav-item>
           </b-navbar-nav>
         </b-navbar-nav>
       </b-collapse>

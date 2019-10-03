@@ -1,16 +1,19 @@
 <template>
-  <sidebar-menu :menu="menu"  id="menu"/>
+<div>
+  <sidebar-menu :menu="menu" id="menu"/>
+</div>
 </template>
  
 <style scoped lang="scss">
 @import "assets/colors.scss";
   #menu{
-    margin-top: $margin-top1 !important
-  }
+    height: 94%;
+    margin-top: 4%;  }
 </style>
 
 <script>
 export default {
+  name:'side',
   data() {
     return {
       menu: [
