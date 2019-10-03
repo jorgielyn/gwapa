@@ -14,14 +14,14 @@
   </div>
 </template>
 <style scoped>
-.v-sidebar-menu{
-  /* margin-top: 56px;
-  margin-bottom: 56px; */
-}
+/* .v-sidebar-menu{
+  margin-top: 56px;
+  margin-bottom: 56px;
+} */
 </style>
 
 <script>
-import sideBar from "components/frame/Sidebar.vue";
+import sideBar from "components/frame/idebar.vue";
 import AUTH from 'services/auth'
 export default {
   name: "lawas",
